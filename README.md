@@ -1,5 +1,7 @@
 # ClanAlogPoster
 Posts clan achievements to a webhook
+Original project found here: https://github.com/bdistin/ClanAlogPoster
+This version has been adapted so that it only posts pets and pvm drops.
 
 # Instructions
 
