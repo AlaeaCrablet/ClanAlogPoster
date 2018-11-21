@@ -62,7 +62,7 @@ class ClanMember {
 			if (data.error) throw data.error;
 			this.errorsFetching = 0;
 			const activities = data.activities.filter(activity => new Date(activity.date) > (this.lastEvent || 0)).reverse();
-			const dropActivities = activities.filter(activity => activity.text.includes('found') || activity.text.includes('XP') || activity.text.includes('levelled'));
+			const dropActivities = activities.filter(activity => activity.text.includes('found') || activity.text.includes('XP') || activity.text.includes('Levelled'));
 			if (activities.length) this.lastEvent = new Date(activities[activities.length - 1].date);
 			return dropActivities;
 		} catch (err) {
